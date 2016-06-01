@@ -1,0 +1,17 @@
+/*Hassan Kobeissi - Index.css intended for Index.html*/
+.ProjectPage {
+    width: 500px; margin-left: 125px;
+}
+.AboutPage {
+    width: 500px; margin-left: 125px;
+}
+.ContactPage {
+    width: 500px; margin-left: 125px;
+
+}
+.First-Title {
+    text-align: center;    
+}
+.CSharp{
+    margin-left: 125px;    
+}
