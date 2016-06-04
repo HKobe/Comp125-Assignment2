@@ -1,3 +1,8 @@
+/*Apps.Js
+Author: Hassan Kobeissi;
+Web Site Name: AssignmentTwo;
+File Description: To Display Paragraphs, and store user info and output to the console. 
+*/
 (function() {
   "use strict"
   //this defines an array of HTML Elements
@@ -32,21 +37,27 @@ var Pararray = [];
   sendButton.addEventListener("click", sendButtonClick);
   
   function sendButtonClick(event) {
-    console.log("Clicked!");
+    console.log("Send Button Clicked!");
   }
   
   //create reference to firstname value
   var name  = document.getElementById("name");
   
   //create reference to email value
-  var name  = document.getElementById("email");
+  var email  = document.getElementById("email");
+  
+  //create ref to Phone Number
+  var phone = document.getElementById("phone");
+  
+    //create ref to the message field
+  var message = document.getElementById("message");
   
   // create ref to the contact form 
   var contactForm = document.getElementById("contactForm");
   
   contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
-    console.log("Just Submitted!");
+    console.log("Form is now Submitted to the Console!");
     showFormInput();
     contactForm.reset();
   });
@@ -55,7 +66,12 @@ var Pararray = [];
     console.log("Name: " + name.value);
     console.log("-----------------");
     console.log("Email: " + email.value);
-    console.log("------------------")
+    console.log("------------------");
+    console.log("Phone: " + phone.value);
+    console.log("------------------");
+    console.log("Message: " + message.value);
+    console.log("------------------");
+
     
   }
   /*Index.html*/
